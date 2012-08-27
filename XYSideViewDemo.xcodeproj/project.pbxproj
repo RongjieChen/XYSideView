@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EA3283615E7617800DC19C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA3283515E7617800DC19C3 /* UIKit.framework */; };
+		7EA3283815E7617800DC19C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA3283715E7617800DC19C3 /* Foundation.framework */; };
+		7EA3283A15E7617800DC19C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA3283915E7617800DC19C3 /* CoreGraphics.framework */; };
+		7EA3284015E7617800DC19C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EA3283E15E7617800DC19C3 /* InfoPlist.strings */; };
+		7EA3284215E7617800DC19C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3284115E7617800DC19C3 /* main.m */; };
+		7EA3284615E7617800DC19C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3284515E7617800DC19C3 /* AppDelegate.m */; };
+		7EA3284915E7617800DC19C3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3284815E7617800DC19C3 /* MainViewController.m */; };
+		7EA3284C15E7617800DC19C3 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3284B15E7617800DC19C3 /* FlipsideViewController.m */; };
+		7EA3284F15E7617800DC19C3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA3284D15E7617800DC19C3 /* MainViewController.xib */; };
+		7EA3285215E7617800DC19C3 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA3285015E7617800DC19C3 /* FlipsideViewController.xib */; };
+		7EA3286215E763EF00DC19C3 /* UIViewController+XYSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3286115E763EF00DC19C3 /* UIViewController+XYSideView.m */; };
+		7EA3286515E7759E00DC19C3 /* SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3286415E7759E00DC19C3 /* SideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EA3283115E7617800DC19C3 /* XYSideViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYSideViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA3283515E7617800DC19C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7EA3283715E7617800DC19C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EA3283915E7617800DC19C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7EA3283D15E7617800DC19C3 /* XYSideViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XYSideViewDemo-Info.plist"; sourceTree = "<group>"; };
+		7EA3283F15E7617800DC19C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EA3284115E7617800DC19C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA3284315E7617800DC19C3 /* XYSideViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XYSideViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7EA3284415E7617800DC19C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EA3284515E7617800DC19C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EA3284715E7617800DC19C3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7EA3284815E7617800DC19C3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7EA3284A15E7617800DC19C3 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		7EA3284B15E7617800DC19C3 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		7EA3284E15E7617800DC19C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		7EA3285115E7617800DC19C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		7EA3286015E763EF00DC19C3 /* UIViewController+XYSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+XYSideView.h"; path = "XYSideView/UIViewController+XYSideView.h"; sourceTree = SOURCE_ROOT; };
+		7EA3286115E763EF00DC19C3 /* UIViewController+XYSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XYSideView.m"; path = "XYSideView/UIViewController+XYSideView.m"; sourceTree = SOURCE_ROOT; };
+		7EA3286315E7759E00DC19C3 /* SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideViewController.h; sourceTree = "<group>"; };
+		7EA3286415E7759E00DC19C3 /* SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA3282E15E7617800DC19C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA3283615E7617800DC19C3 /* UIKit.framework in Frameworks */,
+				7EA3283815E7617800DC19C3 /* Foundation.framework in Frameworks */,
+				7EA3283A15E7617800DC19C3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EA3282615E7617800DC19C3 = {
+			isa = PBXGroup;
+			children = (
+				7EA3285815E761F200DC19C3 /* XYSideView */,
+				7EA3283B15E7617800DC19C3 /* XYSideViewDemo */,
+				7EA3283415E7617800DC19C3 /* Frameworks */,
+				7EA3283215E7617800DC19C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA3283215E7617800DC19C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3283115E7617800DC19C3 /* XYSideViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA3283415E7617800DC19C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3283515E7617800DC19C3 /* UIKit.framework */,
+				7EA3283715E7617800DC19C3 /* Foundation.framework */,
+				7EA3283915E7617800DC19C3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EA3283B15E7617800DC19C3 /* XYSideViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3284415E7617800DC19C3 /* AppDelegate.h */,
+				7EA3284515E7617800DC19C3 /* AppDelegate.m */,
+				7EA3286315E7759E00DC19C3 /* SideViewController.h */,
+				7EA3286415E7759E00DC19C3 /* SideViewController.m */,
+				7EA3284715E7617800DC19C3 /* MainViewController.h */,
+				7EA3284815E7617800DC19C3 /* MainViewController.m */,
+				7EA3284A15E7617800DC19C3 /* FlipsideViewController.h */,
+				7EA3284B15E7617800DC19C3 /* FlipsideViewController.m */,
+				7EA3284D15E7617800DC19C3 /* MainViewController.xib */,
+				7EA3285015E7617800DC19C3 /* FlipsideViewController.xib */,
+				7EA3283C15E7617800DC19C3 /* Supporting Files */,
+			);
+			path = XYSideViewDemo;
+			sourceTree = "<group>";
+		};
+		7EA3283C15E7617800DC19C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3283D15E7617800DC19C3 /* XYSideViewDemo-Info.plist */,
+				7EA3283E15E7617800DC19C3 /* InfoPlist.strings */,
+				7EA3284115E7617800DC19C3 /* main.m */,
+				7EA3284315E7617800DC19C3 /* XYSideViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EA3285815E761F200DC19C3 /* XYSideView */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3286015E763EF00DC19C3 /* UIViewController+XYSideView.h */,
+				7EA3286115E763EF00DC19C3 /* UIViewController+XYSideView.m */,
+			);
+			name = XYSideView;
+			path = XYSideViewDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA3283015E7617800DC19C3 /* XYSideViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA3285515E7617800DC19C3 /* Build configuration list for PBXNativeTarget "XYSideViewDemo" */;
+			buildPhases = (
+				7EA3282D15E7617800DC19C3 /* Sources */,
+				7EA3282E15E7617800DC19C3 /* Frameworks */,
+				7EA3282F15E7617800DC19C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYSideViewDemo;
+			productName = XYSideViewDemo;
+			productReference = 7EA3283115E7617800DC19C3 /* XYSideViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA3282815E7617800DC19C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Samuel Liu";
+			};
+			buildConfigurationList = 7EA3282B15E7617800DC19C3 /* Build configuration list for PBXProject "XYSideViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7EA3282615E7617800DC19C3;
+			productRefGroup = 7EA3283215E7617800DC19C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA3283015E7617800DC19C3 /* XYSideViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA3282F15E7617800DC19C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA3284015E7617800DC19C3 /* InfoPlist.strings in Resources */,
+				7EA3284F15E7617800DC19C3 /* MainViewController.xib in Resources */,
+				7EA3285215E7617800DC19C3 /* FlipsideViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA3282D15E7617800DC19C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA3284215E7617800DC19C3 /* main.m in Sources */,
+				7EA3284615E7617800DC19C3 /* AppDelegate.m in Sources */,
+				7EA3284915E7617800DC19C3 /* MainViewController.m in Sources */,
+				7EA3284C15E7617800DC19C3 /* FlipsideViewController.m in Sources */,
+				7EA3286215E763EF00DC19C3 /* UIViewController+XYSideView.m in Sources */,
+				7EA3286515E7759E00DC19C3 /* SideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA3283E15E7617800DC19C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA3283F15E7617800DC19C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EA3284D15E7617800DC19C3 /* MainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA3284E15E7617800DC19C3 /* en */,
+			);
+			name = MainViewController.xib;
+			sourceTree = "<group>";
+		};
+		7EA3285015E7617800DC19C3 /* FlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA3285115E7617800DC19C3 /* en */,
+			);
+			name = FlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA3285315E7617800DC19C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7EA3285415E7617800DC19C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EA3285615E7617800DC19C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XYSideViewDemo/XYSideViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "XYSideViewDemo/XYSideViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EA3285715E7617800DC19C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XYSideViewDemo/XYSideViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "XYSideViewDemo/XYSideViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA3282B15E7617800DC19C3 /* Build configuration list for PBXProject "XYSideViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA3285315E7617800DC19C3 /* Debug */,
+				7EA3285415E7617800DC19C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA3285515E7617800DC19C3 /* Build configuration list for PBXNativeTarget "XYSideViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA3285615E7617800DC19C3 /* Debug */,
+				7EA3285715E7617800DC19C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA3282815E7617800DC19C3 /* Project object */;
+}
