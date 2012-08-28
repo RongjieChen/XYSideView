@@ -18,6 +18,7 @@
 UIView *sideBGView;
 UIView *sideContentView;
 UIView *sideShadowView;
+UINavigationController *sideNavigationController;
 
 XYSideViewDirection currentDirection;
 
@@ -133,6 +134,11 @@ XYSideViewDirection currentDirection;
     }
 }
 
+-(void)closeButtonAction:(id)sender
+{
+    [self dismissSideViewControllerAnimated:YES];
+}
+
 -(void)presentSideViewControllerFromDirection:(XYSideViewDirection)direction animated:(BOOL)animated
 {
     UIView *keyWindowView = [self keyWindowView];
@@ -154,8 +160,12 @@ XYSideViewDirection currentDirection;
     
     [self layoutSideViewsForInitialState];
     
-    self.view.frame = sideContentView.bounds;
-    [sideContentView addSubview:self.view];
+//    self.view.frame = sideContentView.bounds;
+//    [sideContentView addSubview:self.view];
+    sideNavigationController = [[UINavigationController alloc] initWithRootViewController:self];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStyleBordered target:self action:@selector(closeButtonAction:)];
+    sideNavigationController.view.frame = sideContentView.bounds;
+    [sideContentView addSubview:sideNavigationController.view];
 
     float duration = SideAnimateDuration;
     if(!animated) duration = 0.0f;
@@ -176,7 +186,7 @@ XYSideViewDirection currentDirection;
                          [self layoutSideViewsForInitialState];
                      }
                      completion:^(BOOL finished) {
-                         [self.view removeFromSuperview];
+                         [sideNavigationController.view removeFromSuperview];
                          [sideContentView removeFromSuperview];
                          [sideShadowView removeFromSuperview];
                          [sideBGView removeFromSuperview];
@@ -184,17 +194,18 @@ XYSideViewDirection currentDirection;
                          sideContentView = nil;
                          sideShadowView = nil;
                          sideBGView = nil;
+                         sideNavigationController = nil;
                      }];
 }
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 
--(void)viewDidAppear:(BOOL)animated
-{
-    if(sideContentView)
-        [self layoutSideViews];
-}
+//-(void)viewDidAppear:(BOOL)animated
+//{
+//    if(sideContentView)
+//        [self layoutSideViews];
+//}
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
